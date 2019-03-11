@@ -1,0 +1,391 @@
+/*复位样式*/
+body,html,div,img,ul,li,span,input,a,p,i{
+	margin: 0;
+	padding: 0;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+b{
+	font-weight: normal;
+}
+ul,ol{
+	list-style: none;
+}
+img{
+	border: 0;
+	vertical-align: bottom;
+}
+input{
+	text-decoration: none;
+}
+/*脚本=属性+方法*/
+/*header*/
+.container{
+	background-image: url(../images/header.png);
+	background-repeat: repeat-x;
+	position: relative;
+}
+/*头部*/
+.header{
+	width: 970px;
+	margin: auto;
+	background: url(../images/header-logo.png) no-repeat 480px -235px;
+
+}
+.header-logo{}
+.header-logo img{margin-left: 15px;}
+.header-nav{
+	text-align: center;
+}
+.header-nav>ul{
+	padding-top: 10px;
+	overflow: hidden;
+}
+.header-nav>ul>li{
+	float: left;	
+	
+}
+.header-nav>ul>li>a{
+	display: inline-block;
+	padding: 0 18px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 15px;
+	height: 38px;
+	line-height: 38px;
+}
+.header-nav>ul>li:hover>a{
+	color: #faca52;
+}
+.header-nav>div{
+	position: absolute;
+	top: 132px;
+	left:0;
+	width: 100%;
+	height: 3px;
+	background: url(../images/navbar.png) no-repeat center 0;
+}
+
+/*弹出菜单*/
+.header-nav>ul>li:hover>div{
+	display: block;
+	height: 39px;
+}
+.header ul li .tccd{
+	overflow: hidden;
+	height: 0;
+	z-index: 100;
+	width: 100%;
+	position: absolute;
+	background: #fff;
+	top: 132px;
+	left: 0;
+	transition: all 0.5s;
+	box-shadow: 0 4px 30px #666;
+}
+.header ul li .tccd div{
+	width: 100%;
+	height: 3px;
+	background: url(../images/navbar.png) no-repeat center 0;
+}
+.header ul li .tccd ul{}
+.header ul li .tccd ul li{
+	display: inline-block;
+}
+.header ul li .tccd ul li a{
+	display: inline-block;
+	font-size: 12px;
+	padding: 10px 20px;
+}
+
+/*轮播图*/
+.rbt{
+	position: relative;
+	width: 940px;
+	margin: auto;
+	height: 360px;
+}
+.rbt ul{}
+.rbt ul li{ 
+	position: absolute;
+	top: -1px;
+	left: 0;
+}
+.rbt ul li a{}
+.rbt ul li a img{
+	vertical-align: bottom;
+}
+.rbt ol{
+	position: absolute;
+	bottom: 0;
+	left: 350px;
+}
+.rbt ol li{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+	overflow: hidden;
+	text-indent: -100px;
+	margin-left: 5px;
+}
+.rbt ol li.active{
+	background: #faca52;
+}
+.rbt div{
+	z-index: 100;
+	position: absolute;
+	bottom:0;
+	left: 20px;
+}
+.rbt div span{
+	display: inline-block;
+	font-weight: bold;
+	font-size: 30px;
+	color: #fff;
+}
+
+
+.main{
+	width: 940px;
+	margin: auto;
+	margin-top: 10px;
+	height: 370px;
+}
+.main-title{
+	height: 20px;
+	line-height: 20px;
+	padding-bottom: 3px;
+	border-bottom: 2px solid #faca52;
+	margin-bottom: 10px;
+}
+.main-title span{
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+}
+.main-title span i{
+	margin-right: 10px;
+	color: #faca52;
+}
+.main-title a{
+	float: right;
+	font-size: 14px;
+}
+.main-title a i{
+	color:#faca52;
+}
+
+.main-left{
+	float: left;
+	width: 300px;
+}
+.main-left ul{}
+.main-left ul li{
+	font-size: 12px;
+	line-height: 20px;
+	margin-bottom: 6px;
+}
+.main-left ul li a{}
+
+.main-right{
+	float: right;
+	width: 140px;
+}
+
+
+.main-right ul{
+	background: #EFF0F5;
+	border: 1px solid #e6e6e6;
+	padding: 7px 10px;
+	font-size: 12px;
+	margin-top: -10px;
+}
+.main-right ul li{
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+.main-right ul li i{
+	color: #faca52;
+	font-size: 12px;
+}
+.main-right ul li a{}
+
+.main-center{
+	width: 460px;
+	margin-left: 320px;
+	font-size: 12px;
+}
+.main-center p{
+	font-weight: bold;
+	margin: 10px 0;
+}
+.main-center span{
+	line-height: 20px;
+}
+.main-center a{
+	color: #0a3f76;
+}
+.main-center a:hover{
+	color: #000;
+}
+.main-center img{
+	height: 124px;
+	width: 186px;
+}
+.main-center>div:nth-of-type(2){
+	overflow: hidden;
+/*	height: 140px;*/
+	padding-bottom: 30px;
+}
+.row-top div:nth-of-type(1){
+	display: inline-block;
+	width: 259px;
+	margin-left: 10px;
+	padding-right: 5px;
+}
+.row-top div:nth-of-type(2){
+	float: right;
+	height: 124px;
+}
+
+.main-center>div:nth-of-type(3){
+	overflow: hidden;
+	margin: 5px 0;
+}
+.row-bottom{}
+.row-bottom div:nth-of-type(1){
+	float: left;
+}
+.row-bottom div:nth-of-type(2){
+	float: right;
+	width: 259px;
+	margin-left: 10px;
+}
+
+
+.main-table{
+	width: 940px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.main-table .line-break{
+	width: 160px;
+}
+.main-table ul{
+	width: 940px;
+	border-right: 1px solid #e6e6e6;
+	border-top: 2px solid #faca52;
+	overflow: hidden;
+}
+.main-table li{
+	float: left;
+	width: 156px;
+	height: 120px;
+	border-bottom: 1px solid #e6e6e6;
+	border-left: 1px solid #e6e6e6;
+	padding: 10px 15px;
+	overflow: hidden;
+}
+.main-table li{
+	font-size: 12px;
+	line-height: 20px;
+	position: relative;
+}
+.main-table li a img{
+	height: 60px;
+	display: inline-block;
+}
+.main-table li span{
+	display: block;
+}
+.main-table li a:nth-of-type(1){
+	font-weight: bold;
+}
+.main-table li a:nth-of-type(2){
+	color: #b5b5b5;
+	position: absolute;
+	left: 15px;
+	bottom: 10px;
+	font-weight: bold;
+}
+.main-table li a:nth-of-type(2):hover{
+	color: #000;
+}
+.main-table>ul>li:nth-of-type(1) a{
+	position: static;
+}
+
+
+.footer{
+	background: #066baf;
+}
+.footer-top{
+	padding-top: 20px;
+	width: 940px;
+	margin: auto;
+}
+.footer-logo{
+	float: left;
+}
+.footer-logo img{}
+.footer-top div:nth-of-type(2) ul{
+	float: right;
+}
+.footer-top div:nth-of-type(2) ul li{
+	display: inline-block;
+	font-size: 12px;
+	line-height: 20px;
+	color: #fff;
+}
+.footer-top div:nth-of-type(2) ul li a{
+	color: #fff;
+}
+.footer-top div:nth-of-type(3) ul{
+	margin-left: 60px;
+	font-size: 12px;
+	color: #fff;
+	line-height: 20px;
+	padding-bottom: 20px;
+}
+.footer-top div:nth-of-type(3) ul li{}
+.footer-top div:nth-of-type(3) ul li b{}
+.footer-top div:nth-of-type(3) ul li a{
+	color: #fff;
+}
+.footer-two{
+	background: #0a3f76;
+	padding-top: 10px;
+}
+.footer-bottom{
+	width: 940px;
+	margin: auto;
+	overflow: hidden;
+}
+.footer-bottom span{
+	height: 30px;
+	float: right;
+	font-size: 12px;
+	color: #fff;
+}
+.name{
+	position: fixed;
+	top: 200px;
+	right: 100px;
+	font-size: 40px;
+	font-weight: bold;
+	animation: move 20s infinite alternate;
+}
+@keyframes move{
+	0%{color:red;}
+	14%{color:orange;}
+	28%{color:yellow;}
+	42%{color:green;}
+	56%{color:cyan;}
+	70%{color:blue;}
+	84%{color:purple;}
+	100%{color:red;}
+}
